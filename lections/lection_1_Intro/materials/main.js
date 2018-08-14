@@ -1,91 +1,80 @@
 console.log("Lection 1");
 
-// oper_name; 
 
-/*   
+x = 10;
 
-*/
+// console.log(typeof x, typeof 20, typeof 'Hello world');
 
+b = x + 20;
 
-// console.log( -(10 + 23) );
+// jkbas = 2;
+// str1 = 'hello';
+// str2 = "fooBar";
 
-// console.log(203); //number
-// console.log('привет, как дела?', "102");
-// console.log("20323");
+// console.log(b, str1, "SKJASDNLK", 10);
 
-
-// a = 20; // присвоить значение
-// b = 30;
-// c = '40';
-
-// res = (a * b) - 200;
-// console.log(res);
-// console.log(a, b, 'a * b =', a * b, c);
-
-// a = 40;
-
-// console.log(a);
-
-
-
-// ----------------------------------
-
+// -----------------------------------------
 
 // a = 10;
-// a = a + 1;
 
+// b = -20;
 
-// a = 5;
-// b = 'd';
-
-// // приведение типов
 // res = a + b;
-// console.log('a + b =', res); // number->string + string
+// console.log(res);
 
 // res = a - b;
-// console.log('a - b =', res); // number - string->number
+// console.log(a - b);
+
+// res = a * b;
+// console.log(res);
 
 // res = a / b;
-// console.log('a / b =', res); // number / string->number
+// console.log(res);
+
+// -------------------------------------------
 
 
+x = 30; // присвоить значение
+y = '345';
 
-// ----------------------------------
-
-// x = +prompt('Input x');
-
-// console.log(typeof x);
 // приведение типов
+// console.log('x - y =', x - y );
+// console.log('x * y =', x * y );
+// console.log('x / y =', x / y );
 
-// 1
-// x = parseInt(x);
+// // 1 parseInt()
+// newY = parseInt(y);
 
-// 2
-// x = +x;
+// // 2 унарные операторы
 
-// res = 10 + x + 30;
-// console.log(res);
-
-// ----------------------------------
-
-// boolean
-
-// console.log(true, false);
-
-b = true;
-
-// ==, !=, <, <=, >, >=     // === !==
-// res = 10 != 5;
-
-// console.log(res);
-
-a = 13;
-b = 13;
-c = 26;
-
-console.log('a is odd ',  a % 2 == 0);
+// // x + (-1)*(x + y) => x + (-x - y) => x - x - y
+// z = '-20';
+// // +'20' => (+1)*'20' => (+1)*20 => 20
+// console.log( +z );
 
 
+// console.log('x + y =', x + +y );
+
+
+
+// --------------------
+
+// alert(newY);
+// res = +prompt('Input X', '100');
+// res2 = +prompt()
+// console.log(res + res2)
+
+
+// ----------------- %
+
+// boolean => 1, 0 // true, false
+
+console.log( 10 > 5 );
+console.log( 10 < 5 );
+console.log( 10 >= 5 );
+console.log( 10 <= 5 );
+console.log( 10 == 5 );
+console.log( 10 != 5 );
 
 
 
