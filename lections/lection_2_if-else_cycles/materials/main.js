@@ -133,21 +133,21 @@ if (strEmpty) {
 // -------------------------
 // цикл с постусловием
 
-i = 0;
-do { // условие выполнения цикла
-    console.log(i);
-    i++;
-} while(i <= 10);
+// i = 0;
+// do { // условие выполнения цикла
+//     console.log(i);
+//     i++;
+// } while(i <= 10);
 
 // console.log('after ' + i);
 
 // ----------------------
 
-// цикл с счетчиком
+// // цикл с счетчиком
 
-for ( i = 0; i <= 10; i++ ) {
-    console.log(i);
-}
+// for ( i = 0; i <= 10; i++ ) {
+//     console.log(i);
+// }
 // // 1 -> 2? -> если true -> 4 -> 3 -> 2
 // //      2? -> если false -> exit
 
@@ -177,13 +177,49 @@ for ( i = 0; i <= 10; i++ ) {
 // i++; // постфиксная
 // ++i; // префиксная
 
-x = 5;
-console.log( (x++ * 20) - 10 );
+// x = 5;
+// console.log( (x++ * 20) - 10 );
 
-x = 5;
-console.log( (++x * 20) - 10 );
+// x = 5;
+// console.log( (++x * 20) - 10 );
 
 // ---------------------------
+
+do {
+    a = +prompt();
+    b = +prompt();
+
+    isError = isNaN(a) || isNaN(b);
+    if (isError) {
+        confirm('incorrect');
+    }
+} while(isError);
+
+// do {
+//     b = +prompt();
+
+//     isError =  isNaN(b);
+//     if (isError) {
+//         confirm('incorrect');
+//     }
+// } while(isError);
+
+
+
+
+
+
+
+
+
+for(i = a; i <= b; i++) {
+    if (i % 2 == 0) {
+        console.log(i*i)
+    }
+}
+
+
+
 
 
 
