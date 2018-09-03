@@ -30,8 +30,9 @@ a = 'ddjshjflksd';
 // console.log();
 
 function sum(a, b) {
+    var res = 20 + a - b;
     console.log(b);
-    return a + b;
+    return res;
 }
 
 // console.log(res);
@@ -53,6 +54,7 @@ arr = concat([1, 2], [9, 2, 9], [2]);
 // for(i = 0; i < arr.length; i++){
 //     console.log(arr[i])
 // }
+
 
 
 
