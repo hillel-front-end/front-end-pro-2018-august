@@ -66,4 +66,36 @@ function f0() {
 
 y = 12;
 
-f0();
+// f0();
+
+
+// ----------------------------------------
+
+
+// function addFunc() {
+
+// }
+
+// function factory(a) {
+//     var z = 10;
+
+//     // return function(){
+//     //     console.log(z);
+//     // }
+
+//     if (a) {
+//         return function() {
+
+//         }
+//     }
+    
+//     return addFunc;
+// }
+
+// var some = factory();
+
+// console.log(some === addFunc);
+
+
+// ----------------------------------------
+
