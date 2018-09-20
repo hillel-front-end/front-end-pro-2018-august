@@ -60,7 +60,7 @@
             str: 'hello',
             y: -50
         }
-        data.addRecord({x: 10}, {y: 20}, {z: 30, x: 50});
+        data.addRecord({x: 10}, {y: 20}, {z: 30, x: 50})
         data.x // 50
         data.y // 20
         data.z // 30
