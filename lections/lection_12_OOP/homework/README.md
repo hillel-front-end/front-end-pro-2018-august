@@ -23,7 +23,7 @@
     
     Person имеет такие методы:
         * start() - герой появляется на доске
-        * go(direction, step) - движение по пережаном параметру (direction может быть: 'left', 'right', 'top', 'bottom') и с шагом step
+        * go(direction, step) - движение по переданом параметру (direction может быть: 'left', 'right', 'top', 'bottom') и с шагом step
         * resetPosition() - перенос в начальную позицию
 
 

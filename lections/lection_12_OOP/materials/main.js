@@ -68,7 +68,7 @@ function SuperArray(n, m, options){
     var arr = new Array(n);
     for(var i = 0; i < arr.length; i++){
         arr[i] = new Array(m);
-
+        
         for(var j = 0; j < arr[i].length; j++){
             arr[i][j] = getRand(options.min, options.max);
         }
