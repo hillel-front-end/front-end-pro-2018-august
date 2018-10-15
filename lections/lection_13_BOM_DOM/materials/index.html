@@ -12,17 +12,36 @@
         .block {
             width: 300px;
             border: 2px solid black;
-
             height: 200px;
+            position: fixed;
+            transition: 0.2s;
+        }
+
+        .block:nth-child(1) {
+            background-color: red;
+            left: 100px;
+            top: 200px;
+        }
+
+        .block:nth-child(2) {
+            background-color: blue;
+            left: 400px;
+            top: 100px;
+        }
+
+        .block:nth-child(3) {
+            background-color: green;
+            left: 900px;
+            top: 250px;
         }
     
     </style>
 </head>
 <body>
 
-    <div class="block">
-
-    </div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
 
     <!-- <div id="block" align="left" title="foo">
         Text
