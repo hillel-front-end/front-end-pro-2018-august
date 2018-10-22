@@ -1,4 +1,5 @@
 # Изучить материал
++ https://learn.javascript.ru/multi-insert
 + https://learn.javascript.ru/attributes-and-custom-properties
 + https://learn.javascript.ru/traversing-dom
 + https://learn.javascript.ru/events-and-timing-depth
