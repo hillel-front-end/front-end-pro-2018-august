@@ -76,12 +76,17 @@ window.onload = function(){
     for(var i = 0; i < shows.length; i++){
         shows[i].addEventListener('click', function(){
             var id = "data-id-" + this.dataset.id;
-            var clicks = localStorage[id];
 
-            document.querySelector('span[data-id="'+ this.dataset.id +'"]').innerHTML = clicks;
+            document
+                .querySelector('span[data-id="'+ this.dataset.id +'"]')
+                .innerHTML = localStorage[id];
         });
     }
+}
 
-
-
+function clearCounters(){
+    var blocks = document.querySelectorAll('.block');
+    for(var i = 0; i < blocks.length; i++){
+        localStorage["data-id-" + blocks[i].dataset.id] = 0;
+    }
 }
