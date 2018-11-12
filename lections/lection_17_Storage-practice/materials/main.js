@@ -48,11 +48,40 @@ window.onload = function(){
 
     // list = localStorage.list ? localStorage.list : [1, 2, 3];
 
-    var container = document.querySelector('#container');
-    var li;
-    for(var i = 0; i < list.length; i++){
-        li = document.createElement('li');
-        li.innerHTML = list[i];
-        container.appendChild(li);
+    // var container = document.querySelector('#container');
+    // var li;
+    // for(var i = 0; i < list.length; i++){
+    //     li = document.createElement('li');
+    //     li.innerHTML = list[i];
+    //     container.appendChild(li);
+    // }
+
+
+
+    var blocks = document.querySelectorAll('.block');
+
+    for(var i = 0; i < blocks.length; i++){
+        blocks[i].addEventListener('click', function(){
+            var id = "data-id-" + this.dataset.id;
+            if (!localStorage[id]) {
+                localStorage[id] = 1;
+            } else{
+                localStorage[id]++;
+            }
+        });
     }
+
+    var shows = document.querySelectorAll('.show');
+
+    for(var i = 0; i < shows.length; i++){
+        shows[i].addEventListener('click', function(){
+            var id = "data-id-" + this.dataset.id;
+            var clicks = localStorage[id];
+
+            document.querySelector('span[data-id="'+ this.dataset.id +'"]').innerHTML = clicks;
+        });
+    }
+
+
+
 }
