@@ -14,8 +14,6 @@ var asyncElement =
             reject(x);
         }, 2000)
     });
-
-
 asyncElement
     .then(
         function(value){
