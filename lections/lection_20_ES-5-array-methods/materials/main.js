@@ -187,3 +187,22 @@ res = list
 
 console.log(res)
 
+
+
+window.onload = function(){
+    var cinemas = document.querySelectorAll('.cinema__item')
+    var struct = [] 
+    cinemas.forEach(function(item){
+        struct.push({
+            name: item.children[0].innerHTML,
+            price: item.children[1].innerHTML
+        });
+        // struct.push({
+        //     name: item.querySelector('td:first-child').innerHTML,
+        //     price: item.querySelector('td:last-child').innerHTML
+        // });
+    });
+
+
+    console.log(struct)
+}
