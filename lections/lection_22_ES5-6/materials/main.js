@@ -133,32 +133,32 @@ console.log('Lection_1');
 
 // ----------------------------------
 window.onload = function() {
-    // let list = [
-    //     'Vasya',
-    //     'Petya',
-    //     'Vasya',
-    //     'Petya',
-    //     'Vasya',
-    //     'Petya',
-    //     'Ignat'
-    // ];
+    let list = [
+        'Vasya',
+        'Petya',
+        'Vasya',
+        'Petya',
+        'Vasya',
+        'Petya',
+        'Ignat'
+    ];
 
 
     
-    // let str = `<hr />${genList(list)}<hr />`;
+    let str = `<hr />${genList(list)}<hr />`;
     
-    // document.body.innerHTML = str;
+    document.body.innerHTML = str;
 }
 
 
 
-// function genList(list) {
-//     return `
-//         <ul>
-//         ${list.map(item => `<li>${item}</li>`).join('')}
-//         </ul>
-//     `;
-// }
+function genList(list) {
+    return `
+        <ul>
+        ${list.map(item => `<li>${item}</li>`).join('')}
+        </ul>
+    `;
+}
 
 
 
