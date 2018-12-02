@@ -57,8 +57,9 @@ var p1 = new Human('Vasya', 25, 50);
 
 
 class Parent{
-    constructor(x) {
-        this.x = x;
+    constructor(param1, param2) {
+        this.v2 = param1;
+        this.v3 = param2;
     }
 }
 
@@ -71,12 +72,12 @@ class Child extends Parent {
 }
 
 class Child2 extends Parent {
-    constructor(value) {
-        super(value);
+    constructor(v1, v2, v3) {
+        super(v2, v3);
 
-        this.x = value*2;
+        this.v1 = v1;
     }
 }
 var p2 = new Child(20);
-var p3 = new Child2(20)
+var p3 = new Child2(20, 50, 80)
 console.log(p2, p3)

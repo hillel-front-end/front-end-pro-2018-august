@@ -16,7 +16,7 @@ Animal.eat = function() { // static
     console.log('eat');
 }
 
-Animal.eat();
+// Animal.eat();
 
 
 function Human(name, age) {
@@ -47,6 +47,29 @@ Human.prototype.sleep = function() {
 
 var p1 = new Human('Vasya', 25);
 
-p1.run();
-p1.run();
+// p1.run();
+// p1.run();
 // p1.getCount();
+
+
+// ----------------------
+
+
+var list = [ { value: 10 }, { value: 12 }, { value: 3 }, { value: 17 }];
+
+
+
+
+list.sort((src1, src2) => src1.value - src2.value);
+
+list = list.filter(item => {
+    for(let i = 2; i <= item.value - 1; i++){
+        if ( item.value % i == 0 ){
+            return false;
+        }
+    }
+
+    return true;
+})
+
+console.log(list);
