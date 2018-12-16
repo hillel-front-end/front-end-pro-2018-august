@@ -92,10 +92,35 @@ Vue.component('select-list', {
   `
 });
 
+
+Vue.component('Social', {
+  data: function(){
+    return {
+      first: false,
+      second: true,
+      list: [
+        1, 2, 3
+      ]
+    }
+  },
+  methods: {
+    onChange(){
+      console.log(this.$parent.countries)
+    }
+  },
+  template: `
+    <div class="foo">
+    <button v-on:click="onChange">Click</button>  
+      <slot name="selected-list"></slot>
+    </div> 
+  `
+});
+
 var app = new Vue({
   el: '#app',
   data: {
     message: 10.5,
+    url: '',
     text: 'Hello world!',
     foo: [1, 7, 83],
     counter1: 10,
@@ -132,6 +157,7 @@ var app = new Vue({
     selectedCountry: ''
   },
   methods: {
+    onChange(){},
     UpdateCounter1: function(val){
       this.counter2 = val;
     },
